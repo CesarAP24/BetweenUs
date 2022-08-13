@@ -48,6 +48,36 @@ public class ControladorPersonaje : MonoBehaviour
     }
 
     Vector3 rotationObjective(){
-        return new Vector3(Transform.localEulerAngles.x,cameraTransform.localEulerAngles.y,Transform.localEulerAngles.z);
+
+        float x_rotation = Transform.localEulerAngles.x;
+        float z_rotation = Transform.localEulerAngles.z;
+
+        float y_rotation = Transform.localEulerAngles.y;
+
+        if (Input.GetAxis("Horizontal") > 0){
+            if (Input.GetAxis("Vertical") > 0){
+                y_rotation = cameraTransform.localEulerAngles.y+45;
+            } else if (Input.GetAxis("Vertical") < 0){
+                y_rotation = cameraTransform.localEulerAngles.y+90+45;
+            } else {
+                y_rotation = cameraTransform.localEulerAngles.y + 90;
+            }
+        } else if (Input.GetAxis("Horizontal") < 0) {
+            if (Input.GetAxis("Vertical") > 0){
+                y_rotation = cameraTransform.localEulerAngles.y-45;
+            } else if (Input.GetAxis("Vertical") < 0){
+                y_rotation = cameraTransform.localEulerAngles.y-45-90;
+            } else {
+                y_rotation = cameraTransform.localEulerAngles.y - 90;
+            }
+        } else {
+            if (Input.GetAxis("Vertical") > 0){
+                y_rotation = cameraTransform.localEulerAngles.y;
+            } else if (Input.GetAxis("Vertical") < 0){
+                y_rotation = cameraTransform.localEulerAngles.y+180;
+            }
+        }
+
+        return new Vector3(x_rotation, y_rotation, z_rotation);
     }
 }

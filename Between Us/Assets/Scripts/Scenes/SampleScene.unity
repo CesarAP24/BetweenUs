@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target_obj: {fileID: 1908576867}
-  distance: 2
+  distance: 5.5
   min_distance: 2
   max_distance: 10
   zoom_speed: 100
@@ -763,6 +763,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908576867}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2013342402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ab469dc6dc9a38c48bbbc2f4ea08474a, type: 3}
+  m_PrefabInstance: {fileID: 1822233838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2013342403
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013342402}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ab469dc6dc9a38c48bbbc2f4ea08474a, type: 3}
+  m_Controller: {fileID: 9100000, guid: da622c8e9ca411f448b0087f8f78a909, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2013342404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013342402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93b4e64673d78043be3f11097703155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1001 &2053164446
 PrefabInstance:
   m_ObjectHideFlags: 0

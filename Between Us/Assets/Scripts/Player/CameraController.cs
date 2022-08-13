@@ -118,7 +118,7 @@ public class CameraController : MonoBehaviour
         RaycastHit hit;
 
         if (Physics.Raycast(target.position, new Vector3(x_out, y_out, z_out)-target.position, out hit) && hit.distance <= offset){
-            Debug.Log("Colision: " + hit.point);
+            //Debug.Log("Colision: " + hit.point);
             Debug.DrawRay(target.position, new Vector3(x_out, y_out, z_out)-target.position, Color.green);
 
             return hit.point;
@@ -127,7 +127,7 @@ public class CameraController : MonoBehaviour
             Debug.DrawRay(target.position, new Vector3(x_out, y_out, z_out)-target.position, Color.red);
         }
 
-        Debug.Log("Camera: " + new Vector3(x_out, y_out, z_out));
+        //Debug.Log("Camera: " + new Vector3(x_out, y_out, z_out));
         return new Vector3(x_out, y_out, z_out);
     }
 }
