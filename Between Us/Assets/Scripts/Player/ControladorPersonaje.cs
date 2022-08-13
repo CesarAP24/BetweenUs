@@ -8,7 +8,7 @@ public class ControladorPersonaje : MonoBehaviour
     private Rigidbody Rb;
     private Transform Transform, cameraTransform;
 
-    public float jumpforce = 1, speed = 1;
+    public float jumpforce = 1, speed = 1, rotationSpeed = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,16 +24,15 @@ public class ControladorPersonaje : MonoBehaviour
             Rb.AddForce(Vector3.up*jumpforce, ForceMode.Impulse);
             //Debug.Log("Salto");
         }
+
+        Transform.rotation = Quaternion.Slerp(Transform.rotation, rotationObjective(), rotationSpeed);
     }
 
     void FixedUpdate(){
         Rb.MovePosition(positionObjective(Transform, cameraTransform, speed, Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
 
-
-
         
-        Rb.MoveRotation(Quaternion.Euler(rotationObjective()));
-
+        
     }
 
     Vector3 positionObjective(Transform local, Transform camera, float velocidad, float x_input, float y_input){
@@ -47,7 +46,7 @@ public class ControladorPersonaje : MonoBehaviour
         return new Vector3(x_position,y_position,z_position);
     }
 
-    Vector3 rotationObjective(){
+    Quaternion rotationObjective(){
 
         float x_rotation = Transform.localEulerAngles.x;
         float z_rotation = Transform.localEulerAngles.z;
@@ -78,6 +77,6 @@ public class ControladorPersonaje : MonoBehaviour
             }
         }
 
-        return new Vector3(x_rotation, y_rotation, z_rotation);
+        return Quaternion.Euler(new Vector3(x_rotation, y_rotation, z_rotation));
     }
 }
