@@ -286,8 +286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relativeCamera: {fileID: 963194225}
-  jumpforce: 250
+  jumpforce: 0
   speed: 5
+  rotationSpeed: 0.1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.51
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -419,7 +420,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.07231222, g: 0.13590989, b: 0.23584908, a: 0}
+  m_BackGroundColor: {r: 0.017132431, g: 0.052201483, b: 0.103773594, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -460,7 +461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.26934004, y: -0, z: -0, w: 0.9630452}
-  m_LocalPosition: {x: -6.75, y: 8.059999, z: 20.81}
+  m_LocalPosition: {x: -0.01, y: 2.94, z: -2.39}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -480,9 +481,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target_obj: {fileID: 1908576867}
-  distance: 5.5
-  min_distance: 2
-  max_distance: 10
+  distance: 2
+  min_distance: 1
+  max_distance: 5
   zoom_speed: 100
   angle_x: -180
   angle_y: 30

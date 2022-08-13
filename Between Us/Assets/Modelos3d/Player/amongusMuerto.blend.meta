@@ -6,7 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 4409a3abb27618f44b40aae0414712b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main plastic
+    second: {fileID: 2100000, guid: 0414b3bc30e351f4ea4e2108d2f4aa50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MainHueso
+    second: {fileID: 2100000, guid: 967bfa61983867e42b82a083b5e910a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MainInside
+    second: {fileID: 2100000, guid: 4385145e425609740a81e0ecbea50dbb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
