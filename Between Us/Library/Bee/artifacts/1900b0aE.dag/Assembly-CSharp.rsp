@@ -352,6 +352,7 @@
 "Assets/Scripts/Player/AnimationsPErsonaje.cs"
 "Assets/Scripts/Player/CameraController.cs"
 "Assets/Scripts/Player/ControladorPersonaje.cs"
+"Assets/Scripts/QuickOutline/Scripts/Outline.cs"
 -langversion:9.0
 
 /deterministic
