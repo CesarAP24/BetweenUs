@@ -11,7 +11,6 @@ Material:
   m_Shader: {fileID: 47, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
   - _EMISSION
-  - _GLOSSYREFLECTIONS_OFF
   m_InvalidKeywords:
   - _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 1
@@ -92,10 +91,10 @@ Material:
     - _Exposure: 1
     - _FlipbookMode: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.347
-    - _GlossyReflections: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 1
     - _LightingEnabled: 1
-    - _Metallic: 1
+    - _Metallic: 0.516
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
